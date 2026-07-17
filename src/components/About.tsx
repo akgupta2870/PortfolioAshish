@@ -83,7 +83,7 @@ export default function About({ darkMode }: AboutProps) {
                 darkMode ? "text-neutral-300" : "text-neutral-700"
               }`}
             >
-              I am a seasoned **Senior Full Stack Developer** with a focus on Frontend UI Architecture and cloud delivery pipelines. Over my **7+ year career**, I have engineered comprehensive digital architectures in highly demanding environments including **FinTech, EdTech, and SaaS management**.
+              I am a seasoned **Full Stack Developer** with a focus on Frontend UI Architecture and cloud delivery pipelines. Over my **5+ year career**, I have engineered comprehensive digital architectures in highly demanding environments including **FinTech, EdTech, and SaaS management**.
             </motion.p>
 
             <motion.p

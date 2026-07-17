@@ -2,9 +2,9 @@ import { Experience, Project, SkillCategory, Achievement, TestimonialValue } fro
 
 export const personalInfo = {
   name: "Ashish Kumar",
-  title: "Senior Full Stack & React Specialist",
-  tagline: "Building high-performance, enterprise-grade web applications with React, Next.js, and Node.js.",
-  experienceYears: "7+",
+  title: "Full Stack Developer",
+  tagline: "Dynamic Full Stack Developer with a B.Tech in Computer Science and Engineering, skilled in React, Next.js, API integration, performance tuning, CI/CD, and agile development leveraging extensive experience in crafting high-quality web applications.",
+  experienceYears: "5+",
   email: "akgupta2870@gmail.com",
   phone: "+91-9602445675",
   location: "Greater Noida, India",
@@ -16,21 +16,21 @@ export const personalInfo = {
 export const achievements: Achievement[] = [
   {
     id: "1",
-    metric: "7+",
+    metric: "5+",
     label: "Years Experience",
-    description: "Designing enterprise architecture for FinTech, EdTech, and SaaS applications.",
+    description: "Designing frontend architectures & scalable full-stack applications.",
   },
   {
     id: "2",
     metric: "20+",
     label: "Projects Delivered",
-    description: "From concept to global deployment on AWS with top-tier engineering standards.",
+    description: "From concept to deployment with modern engineering standards.",
   },
   {
     id: "3",
     metric: "100+",
     label: "Features Shipped",
-    description: "Modernized old legacy class-based codebases to modular hooks, saving developer hours.",
+    description: "Modernized legacy codebases to functional hooks, saving developer hours.",
   },
   {
     id: "4",
@@ -196,7 +196,8 @@ export const projects: Project[] = [
       "Leveraged token chunking and request queuing to handle high concurrent chat volume.",
       "Cached common QA response pairs in Redis/MongoDB, bypassing LLM inference for 60% of standard questions."
     ],
-    businessImpact: "Automated 70% of standard tenant inquiries, resulting in a 40% reduction in customer support response times and significantly higher tenant satisfaction ratings."
+    businessImpact: "Automated 70% of standard tenant inquiries, resulting in a 40% reduction in customer support response times and significantly higher tenant satisfaction ratings.",
+    githubUrl: "https://github.com/akgupta2870/Property-AI-Chatbot"
   },
   {
     id: "iflip",
@@ -215,7 +216,9 @@ export const projects: Project[] = [
       "Utilized custom Web Workers to process continuous stock price streams off the main browser thread.",
       "Implemented layout virtualization to render stock ticker tables containing thousands of items smoothly."
     ],
-    businessImpact: "Enabled seamless stock trades with sub-100ms execution rendering, serving over 50,000 active transactions daily without visual delay or crash."
+    businessImpact: "Enabled seamless stock trades with sub-100ms execution rendering, serving over 50,000 active transactions daily without visual delay or crash.",
+    liveUrl: "https://iflipinvest.com/",
+    githubUrl: "https://github.com/akgupta2870/iflip-trading"
   },
   {
     id: "scoreplus",
@@ -234,7 +237,9 @@ export const projects: Project[] = [
       "Reduced CSS footprint by 65% by migrating from legacy styles to Tailwind CSS utilities.",
       "Implemented strict code-splitting, lazy-loading off-screen sections, and automated image compression pipelines."
     ],
-    businessImpact: "Achieved a 98/100 performance score on Google Lighthouse, reducing page-load dropouts by 45% and growing student engagement by 80%."
+    businessImpact: "Achieved a 98/100 performance score on Google Lighthouse, reducing page-load dropouts by 45% and growing student engagement by 80%.",
+    liveUrl: "https://scoreplusits.com/",
+    githubUrl: "https://github.com/akgupta2870/scoreplus-exam-hub"
   },
   {
     id: "speakenenglish",
@@ -253,7 +258,9 @@ export const projects: Project[] = [
       "Optimized browser speech buffers to ensure zero audio recording lag or playback distortion.",
       "Memoized heavy chart render cycles to prevent UI stutters during pronunciation analysis."
     ],
-    businessImpact: "Helped over 100,000 students improve pronunciation precision scores by 35% within their first month of daily usage."
+    businessImpact: "Helped over 100,000 students improve pronunciation precision scores by 35% within their first month of daily usage.",
+    liveUrl: "https://speakenenglish.com/",
+    githubUrl: "https://github.com/akgupta2870/SpeakEnEnglish"
   },
   {
     id: "studybharat",
@@ -272,7 +279,9 @@ export const projects: Project[] = [
       "Implemented MathJax rendering in a worker thread to keep the main thread fluid.",
       "Optimized static pre-rendering on over 2,000 syllabus topic pages."
     ],
-    businessImpact: "Created a seamless preparation ecosystem used by over 250,000 aspiring engineers and doctors, leading to a 50% increase in average mock exam scores."
+    businessImpact: "Created a seamless preparation ecosystem used by over 250,000 aspiring engineers and doctors, leading to a 50% increase in average mock exam scores.",
+    liveUrl: "https://studybharat.com/",
+    githubUrl: "https://github.com/akgupta2870/StudyBharat"
   }
 ];
 

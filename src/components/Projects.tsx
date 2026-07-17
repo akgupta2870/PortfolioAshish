@@ -255,6 +255,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               whileHover={{ y: -8 }}
               onClick={() => setSelectedProject(proj)}
+              data-cursor-text="VIEW"
               className={`rounded-3xl border overflow-hidden cursor-pointer flex flex-col justify-between group transition-all h-full ${
                 darkMode
                   ? "bg-neutral-900/30 border-white/5 hover:border-brand-purple/30 shadow-xl shadow-black/40"
@@ -471,33 +472,48 @@ export default function Projects({ darkMode }: ProjectsProps) {
                     </div>
 
                     {/* Footer Buttons */}
-                    <div className="flex items-center gap-3 pt-4">
-                      <a
-                        href={personalInfo.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold border transition-all ${
-                          darkMode
-                            ? "bg-neutral-900 border-white/5 hover:bg-neutral-800/80 text-white"
-                            : "bg-white border-black/5 hover:bg-neutral-50 text-neutral-800"
-                        }`}
-                      >
-                        <Github size={13} />
-                        Inspect Source Code
-                      </a>
-                      <button
-                        onClick={() => {
-                          setSelectedProject(null);
-                          const element = document.getElementById("contact");
-                          if (element) {
-                            element.scrollIntoView({ behavior: "smooth" });
-                          }
-                        }}
-                        className="flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold bg-gradient-to-r from-brand-purple to-brand-blue text-white shadow-lg shadow-brand-purple/10"
-                      >
-                        Request Live Walkthrough
-                        <ArrowUpRight size={13} />
-                      </button>
+                    <div className="flex items-center flex-wrap gap-3 pt-4">
+                      {selectedProject.githubUrl && (
+                        <a
+                          href={selectedProject.githubUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold border transition-all ${
+                            darkMode
+                              ? "bg-neutral-900 border-white/5 hover:bg-neutral-800/80 text-white"
+                              : "bg-white border-sky-200 hover:bg-sky-50 text-sky-800"
+                          }`}
+                        >
+                          <Github size={13} />
+                          Inspect GitHub Repository
+                        </a>
+                      )}
+                      
+                      {selectedProject.liveUrl ? (
+                        <a
+                          href={selectedProject.liveUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold bg-gradient-to-r from-brand-purple to-brand-blue text-white shadow-lg shadow-brand-purple/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                        >
+                          View Live Project
+                          <ArrowUpRight size={13} />
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() => {
+                            setSelectedProject(null);
+                            const element = document.getElementById("contact");
+                            if (element) {
+                              element.scrollIntoView({ behavior: "smooth" });
+                            }
+                          }}
+                          className="flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold bg-gradient-to-r from-brand-purple to-brand-blue text-white shadow-lg shadow-brand-purple/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                        >
+                          Request Live Walkthrough
+                          <ArrowUpRight size={13} />
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>

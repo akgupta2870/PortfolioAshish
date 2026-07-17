@@ -135,7 +135,7 @@ export default function ExperienceTimeline({ darkMode }: ExperienceTimelineProps
               darkMode ? "text-neutral-400" : "text-neutral-600"
             }`}
           >
-            7 years of launching high-availability platforms, mentoring developer squads, and implementing modern frontend state engines.
+            5+ years of launching high-availability platforms, mentoring developer squads, and implementing modern frontend state engines.
           </p>
         </div>
 

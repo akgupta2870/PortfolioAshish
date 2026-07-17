@@ -79,7 +79,7 @@ export default function TechStack({ darkMode }: TechStackProps) {
               darkMode ? "text-neutral-400" : "text-neutral-600"
             }`}
           >
-            Over 7 years of honing technical skills in standard React paradigms, database optimization, CI/CD automation, and high-performance system designs.
+            Over 5+ years of honing technical skills in standard React paradigms, database optimization, CI/CD automation, and high-performance system designs.
           </p>
         </div>
 
